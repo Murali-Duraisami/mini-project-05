@@ -32,10 +32,10 @@ class DepressionModel(nn.Module):
 # -----------------------------
 # LOAD MODEL + PREPROCESSOR
 # -----------------------------
-preprocessor = joblib.load("E:\\Laptop\\Mental Health Survey\\notebooks\\preprocessor.pkl")
+preprocessor = joblib.load("preprocessor.pkl")
 INPUT_DIM = 39
 model = DepressionModel(input_dim=INPUT_DIM)
-state_dict = torch.load("E:\\Laptop\\Mental Health Survey\\notebooks\\depression_model.pth", map_location=torch.device('cpu'))
+state_dict = torch.load("depression_model.pth", map_location=torch.device('cpu'))
 model.load_state_dict(state_dict)
 model.eval()
 
