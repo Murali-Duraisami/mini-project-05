@@ -146,5 +146,4 @@ if st.button("Predict Depression Risk"):
     else:
         st.success(f"✅ Low Risk of Depression")
 
-    st.write(f"Probability Score: {prob:.4f}")
-    st.write(f"Threshold Used: {threshold}")
+    
